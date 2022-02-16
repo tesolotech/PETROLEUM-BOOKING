@@ -1,0 +1,30 @@
+{
+  "name": "petroleum-booking",
+  "version": "1.0.0",
+  "description": "Node petroleum book application with feature booking or gas, petrol, diesel. along with user creation and route for profile pic upload",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NODE",
+    "EXPRESS",
+    "JWT",
+    "BODY",
+    "PARSER",
+    "MONGODB",
+    "MULTER"
+  ],
+  "author": "VIKASH KUMAR",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.15"
+  }
+}
