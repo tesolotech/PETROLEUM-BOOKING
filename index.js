@@ -36,6 +36,7 @@ app.set('port', process.env.PORT || 3000);
 
 // Require Users routes
 require('./app/routes/user.routes.js')(app);
+require('./app/routes/order.routes.js')(app);
 
 app.listen(app.get('port'), () => console.log(`Server is listening on port ${app.get('port')}`));
 

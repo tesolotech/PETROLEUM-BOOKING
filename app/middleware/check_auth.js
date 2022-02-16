@@ -2,9 +2,9 @@
 const jwt = require('jsonwebtoken');
 
 module.exports = function (req, res, next) {
-    console.log(req.headers);
     try {
-        const decode = jwt.verify(req.headers.authorization, 'RADHASWAMI');
+        const decode = jwt.verify(req.headers.authorization, process.env.JWT_SECRET);
+
         req.userData = decode;
         next();
     } catch (error) {

@@ -42,7 +42,6 @@ exports.signupUser = (req, res, next) => {
 // Login user
 exports.loginUser = (req, res, next) => {
     Users.findByEmailId(req.body.email).then(user => {
-        console.log('result', user)
         if (!user) {
             res.status(401).json({
                 status: 401,
