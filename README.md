@@ -22,13 +22,53 @@
 
 ## API URLS
 
+#### User signup
+
+     > URL: '/api/signup'
+     > Payload : {"name":"","email":"","password":"","profile_pic":"","userRole":"","deleted":false,"blocked": false}
+     > Method : POST
+
+#### User Login
+
+     > URL : '/api/login'
+     > Payload : {"email":"","password":""}
+     > Method : POST
+
+#### Get all User list
+
+     > URL : '/api/users'
+     > Payload : nothing
+     > Method : GET
+
+#### Upload user profile pic
+
+     > URL : '/api/uploadFiles'
+     > Payload : {File: File, "userId": ""}
+     > Method : POST
+
+#### Place new order
+
+     > URL : '/api/order'
+     > Payload : {"type": "Petrol/diesal/gas", "userId": "", "quantity": "", "rate": "", "vehicles_type": "","total": "Can we calculated autometically", "discount": "",}
+     > Method : POST
+
+#### Get specific order of user
+
+     > URL : '/api/orders/:userId'
+     > Payload : Nothing
+     > Method : GET
+
 ## Project Specifications
 
 **POSTMAN API TESTING AND DATABASE VIEWS**
 
-### URL : https://github.com/tesolotech/node_login-signup_app/tree/master/postman_%26_mongo_atlas_pic
-
 ### PORT : 3000
+
+### JWT authentication token with expries time
+
+### API KEY authentication
+
+### .env Contains all confidential info of project
 
 ```
 **Commands**
